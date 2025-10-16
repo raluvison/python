@@ -15,3 +15,5 @@ filtro = input("Digite a categoria que você deseja: ")
 for i in pedidos: #para cada item dentro da lista pedidos, estrutura de laço
     if filtro == i[1]:
         print(f'Pedido: {i[0]} ------- Valor (R$): {i[2]} ------- Situação: {i[3]}'.center(40))
+    else:
+        print('Categoria inválida. Tente novamente.')
