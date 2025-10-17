@@ -1,7 +1,7 @@
-frase = input('Digite alguma frase: ')
+frase = input('Digite alguma frase: ').strip().upper()
 
 print(
-    f'Quantas vezes apareceu o a: {frase.count('a')} \n'
-    f'Em qual posição ela apareceu a primeira vez: {frase.find('a')} \n'
-    f'Em qual posição ela apareceu a última vez: {frase.rfind('a')}'
+    f'Quantas vezes apareceu o A: {frase.count('A')} \n'
+    f'Em qual posição ela apareceu a primeira vez: {frase.find('A')+1} \n'
+    f'Em qual posição ela apareceu a última vez: {frase.rfind('A')+1}'
 )
