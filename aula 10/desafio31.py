@@ -1,8 +1,7 @@
-distance = int(input('Digite a distância da viagem em Km: '))
+distance = float(input('Digite a distância da viagem em Km: '))
 
 if distance < 200:
-    passagem1 = distance * 0.50
-    print(f'O preço da passagem numa viagem de {distance}Km é de: R${passagem1:.2f}')
+    preço = distance * 0.50
 else:
-    passagem2 = distance * 0.45
-    print(f'O preço da passagem numa viagem de {distance}Km é de: R${passagem2:.2f}')
+    preço = distance * 0.45
+print(f'O preço da passagem numa viagem de {distance}Km é de: R${preço:.2f}')
