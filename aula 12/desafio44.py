@@ -17,7 +17,7 @@ while True:
 
     if opção == 1:
         total = valor - desconto10
-        print(f'Sua compra de R${valor:.2f} vai custar R${valor - desconto10:.2f} no final.')
+        print(f'Sua compra de R${valor:.2f} vai custar R${total:.2f} no final.')
         break
     elif opção == 2:
         print(f'Sua compra de R${valor:.2f} vai custar R${valor - desconto5:.2f} no final.')
