@@ -6,7 +6,7 @@ while True: # inicio do loop para jogar novamente
         'Suas opções:\n'
         '[ 1 ] PEDRA\n'
         '[ 2 ] PAPEL\n'
-        '[ 3 ] TESSOURA'
+        '[ 3 ] TESOURA'
     )
 
     while True: # inicio do loop para resposta inválida
@@ -40,12 +40,12 @@ while True: # inicio do loop para jogar novamente
     print('-==' * 20)
 
     if jogador == computador:
-        print('Empate! Tente novamente!')
+        print('EMPATE! Tente novamente!')
         print('')
     elif jogador == 'PAPEL' and computador == 'PEDRA' or \
         jogador == 'PEDRA' and computador == 'TESOURA' or \
             jogador == 'TESOURA' and computador == 'PAPEL': # definindo primeiro  o jogador
-                print('Jogador venceu!')
+                print('JOGADOR VENCEU!')
                 print(
                     'Deseja jogar novamente?\n' \
                     '[ SIM ]' \
@@ -56,7 +56,7 @@ while True: # inicio do loop para jogar novamente
                     break
                 print('')
     else: # se o jogador não vencer, logo o computador o vencedor é o computador
-        print('Computador venceu!')
+        print('COMPUTADOR VENCEU!')
         print(
             'Deseja jogar novamente?\n' \
             '[ SIM ]' \
