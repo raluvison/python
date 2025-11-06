@@ -1,7 +1,7 @@
 import random
 import time
 
-while True:
+while True: # inicio do loop para jogar novamente
     print(
         'Suas opções:\n'
         '[ 1 ] PEDRA\n'
@@ -9,7 +9,7 @@ while True:
         '[ 3 ] TESSOURA'
     )
 
-    while True:
+    while True: # inicio do loop para resposta inválida
         jogador = int(input('Qual é a sua jogada? '))
         if jogador == 1:
             jogador = 'PEDRA'
@@ -44,7 +44,7 @@ while True:
         print('')
     elif jogador == 'PAPEL' and computador == 'PEDRA' or \
         jogador == 'PEDRA' and computador == 'TESOURA' or \
-            jogador == 'TESOURA' and computador == 'PAPEL':
+            jogador == 'TESOURA' and computador == 'PAPEL': # definindo primeiro  o jogador
                 print('Jogador venceu!')
                 print(
                     'Deseja jogar novamente?\n' \
@@ -55,14 +55,14 @@ while True:
                 if yon == 'NÃO':
                     break
                 print('')
-    else:
+    else: # se o jogador não vencer, logo o computador o vencedor é o computador
         print('Computador venceu!')
         print(
             'Deseja jogar novamente?\n' \
             '[ SIM ]' \
             '[ NÃO ]'
         )
-        yon = input('')
-        if yon == 'NÃO':
+        yon = input('') # yon = yes or no
+        if yon == 'NÃO': # se yon for igual a 'NÃO' o loop é quebrado
             break
         print('')
