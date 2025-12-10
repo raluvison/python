@@ -46,23 +46,25 @@ while True: # inicio do loop para jogar novamente
         jogador == 'PEDRA' and computador == 'TESOURA' or \
             jogador == 'TESOURA' and computador == 'PAPEL': # definindo primeiro  o jogador
                 print('JOGADOR VENCEU!')
-                print(
-                    'Deseja jogar novamente?\n' \
-                    '[ SIM ]' \
-                    '[ NÃO ]'
-                )
-                yon = input('')
-                if yon == 'NÃO':
-                    break
-                print('')
+                while True:
+                    print(
+                        'Deseja jogar novamente?\n' \
+                        '[ SIM ]' \
+                        '[ NÃO ]'
+                    )
+                    yon = input('')
+                    if yon == 'NÃO':
+                        break
+                
     else: # se o jogador não vencer, logo o computador o vencedor é o computador
         print('COMPUTADOR VENCEU!')
-        print(
-            'Deseja jogar novamente?\n' \
-            '[ SIM ]' \
-            '[ NÃO ]'
-        )
-        yon = input('') # yon = yes or no
-        if yon == 'NÃO': # se yon for igual a 'NÃO' o loop é quebrado
-            break
+        while True:   
+            print(
+                'Deseja jogar novamente?\n' \
+                '[ SIM ]' \
+                '[ NÃO ]'
+            )
+            yon = input('').upper().strip() # yon = yes or no
+            if yon == 'NÃO': # se yon for igual a 'NÃO' o loop é quebrado
+                break
         print('')
